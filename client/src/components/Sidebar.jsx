@@ -13,14 +13,14 @@ import {
   useTheme,
 } from "@mui/material";
 import {
-  SettingsOutlined,
+  // SettingsOutlined,
   ChevronLeft,
   ChevronRightOutlined,
   HomeOutlined,
   ShoppingCartOutlined,
   Groups2Outlined,
   ReceiptLongOutlined,
-  PublicOutlined,
+  // PublicOutlined,
   PointOfSaleOutlined,
   TodayOutlined,
   CalendarMonthOutlined,
@@ -31,7 +31,7 @@ import {
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import FlexBetween from "./FlexBetween";
-import profileImage from "assets/profile.jpeg";
+// import profileImage from "assets/profile.jpeg";
 
 const navItems = [
   {
@@ -54,10 +54,10 @@ const navItems = [
     text: "Transactions",
     icon: <ReceiptLongOutlined />,
   },
-  {
-    text: "Geography",
-    icon: <PublicOutlined />,
-  },
+  // {
+  //   text: "Geography",
+  //   icon: <PublicOutlined />,
+  // },
   {
     text: "Sales",
     icon: null,
@@ -82,10 +82,10 @@ const navItems = [
     text: "Management",
     icon: null,
   },
-  {
-    text: "Admin",
-    icon: <AdminPanelSettingsOutlined />,
-  },
+  // {
+  //   text: "Admin",
+  //   icon: <AdminPanelSettingsOutlined />,
+  // },
   {
     text: "Performance",
     icon: <TrendingUpOutlined />,
@@ -132,7 +132,7 @@ const Sidebar = ({
               <FlexBetween color={theme.palette.secondary.main}>
                 <Box display="flex" alignItems="center" gap="0.5rem">
                   <Typography variant="h4" fontWeight="bold">
-                    ECOMVISION
+                    Dashify
                   </Typography>
                 </Box>
                 {!isNonMobile && (
@@ -195,7 +195,7 @@ const Sidebar = ({
 
           <Box position="absolute" bottom="2rem">
             <Divider />
-            <FlexBetween textTransform="none" gap="1rem" m="1.5rem 2rem 0 3rem">
+            {/* <FlexBetween textTransform="none" gap="1rem" m="1.5rem 2rem 0 3rem">
               <Box
                 component="img"
                 alt="profile"
@@ -226,7 +226,7 @@ const Sidebar = ({
                   fontSize: "25px ",
                 }}
               />
-            </FlexBetween>
+            </FlexBetween> */}
           </Box>
         </Drawer>
       )}
